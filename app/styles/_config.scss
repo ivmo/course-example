@@ -1,0 +1,24 @@
+$default-width: 2560;
+$default-height: 1600;
+
+$colors: (
+  'dark-white': #f5f5f5,
+  'white': #fff,
+  'gray-dark': #707070,
+  'gray': #9b9b9b,
+  'light-gray': #e0e0e0,
+  'violet': #6066b6,
+  'purple': #673995,
+  'yellow-dark': #c5a600,
+  'yellow': #fcd734,
+  'black': #000
+) !default;
+
+$breakpoints: (
+  'min': 375px, 
+  'xsmall': 420px,
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px,
+  'xlarge':  1460px
+) !default;

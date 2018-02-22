@@ -1,0 +1,132 @@
+.alp-item {
+  padding: 0;
+  font-size: 1em;
+  white-space: normal;
+  line-height: inherit;
+  overflow: visible;
+  position: relative;
+  box-sizing: border-box;
+  background: #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 1px 5px 6px rgba(#000, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.3em;
+  z-index: 1;
+  max-width: 78px;
+  min-width: 78px;
+  height: 36px;
+
+  @include breakpoint('small') {
+    max-width: 112px;
+    min-width: 112px;
+    height: 60px;
+    font-size: 0.8em;
+  }
+  @include breakpoint('large') {
+    max-width: 170px;
+    min-width: 170px;
+    height: 80px;
+    font-size: 0.9em;
+  }
+
+  .item__icon {
+    max-width: 2em;
+    min-width: 2em;
+    height: 2em;
+    fill: #000;
+    stroke: #000;
+    margin-right: 1em;
+  }
+
+  .item__label {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    @include breakpoint('medium') {
+      line-height: 1.2;
+    }
+  }
+
+  textarea.item__label {
+    box-sizing: border-box;
+    padding: 1em 1em 1em 0;
+    height: 100%;
+    font-size: 1em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    line-height: 1;
+    resize: none;
+    overflow: visible;
+
+    &::placeholder {
+      font-style: italic;
+      color: #000;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: calc(100% + 0.2em);
+    height: calc(100% + 0.2em + 2px);
+    top: calc(50% + 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.2em solid transparent;
+    border-radius: 4px;
+    z-index: 0;
+    transition: border-color 230ms;
+  }
+
+  &--no-shadow {
+    &::after {
+      top: 50%;
+    }
+  }
+
+  &._is_selected {
+    &::after {
+      border-color: #fcd734;
+    }
+  }
+  &._is_wrong {
+    &::after {
+      border-color: #ff503d;
+    }
+  }
+}
+
+.alp-item__fab {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  font-weight: 300;
+  transform: translate(40%, -50%);
+  z-index: 2;
+  line-height: 100%;
+  width: 20px;
+  height: 20px;
+
+  @include breakpoint('small') {
+    width: 26px;
+    height: 26px;
+  }
+  @include breakpoint('large') {
+    width: 40px;
+    height: 40px;
+  }
+
+  &._is_empty {
+    font-size: 2em;
+  }
+}
+
+.mat-mini-fab .mat-button-wrapper {
+  padding: 0 !important;
+  line-height: inherit !important;
+}

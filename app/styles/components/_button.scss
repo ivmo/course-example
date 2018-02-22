@@ -1,0 +1,47 @@
+.mat-raised-button {
+  font-size: 1em;
+  font-weight: 400;
+  height: 3em;
+  min-height: 3em;
+  padding: 0 2.6em;
+  line-height: 3em;
+  border-radius: 5px !important;
+
+  .mat-button-ripple.mat-ripple {
+    border-radius: 5px !important;
+  }
+
+  &.mat-disabled,
+  &[color=disabled] {
+    background-color: get-color('light-gray');
+    color: get-color('gray');
+  }
+}
+
+button.mat-raised-button.button--trigger {
+  position: relative;
+  padding: 0 0 0 2.6em;
+  text-align: left;
+  background: #00a8ec;
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background: #000;
+    top: 50%;
+    left: 1.5em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.mat-disabled,
+  &[color=disabled] {
+    background: #addef2;
+    color: #799aa8;
+    &::before {
+      visibility: hidden;
+    }
+  }
+}

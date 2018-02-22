@@ -1,0 +1,39 @@
+// bower:scss
+// endbower
+
+@import './config';
+@import './mixins';
+
+html {
+  font-size: 100%;
+  font-family: Roboto, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+@import 'reset';
+@import 'components/header';
+@import 'components/sidenav';
+@import 'components/layout';
+@import 'components/item';
+@import 'components/term';
+@import 'components/animations';
+@import 'components/button';
+@import 'components/table';
+
+//  Пример слайда
+@import 'slides/example';

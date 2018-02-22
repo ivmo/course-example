@@ -1,0 +1,86 @@
+.alp-sidenav {
+  width: 320px;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  @include breakpoint('min') {
+    max-width: 780px;
+    width: 360px;
+  }
+  @include breakpoint('small') {
+    width: 48.4%;
+  }
+
+  .material-icons {
+    font-size: inherit;
+    line-height: 100%;
+  }
+}
+
+.alp-sidenav__container {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  font-size: 10px;
+
+  p {
+    font-size: 1em;
+    margin: 0 0 0.5em 0;
+    font-weight: 300;
+
+    b {
+      font-size: inherit;
+      font-weight: normal;
+    }
+  }
+  @include breakpoint('small') {
+    font-size: 14px;
+  }
+  @include breakpoint('medium') {
+    font-size: 16px;
+  }
+  @include breakpoint('large') {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+}
+
+.alp-sidenav__viewbox {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  margin-top: 1em;
+  padding-bottom: 2em;
+}
+
+.alp-sidenav__close,
+.alp-sidenav__back {
+  color: #959595;
+  position: absolute;
+  right: 1em;
+  top: 0.4em;
+  font-size: 10px;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  .mat-icon {
+    width: auto;
+    height: auto;
+    line-height: 100%;
+    font-size: 2em;
+  }
+  @include breakpoint('small') {
+    font-size: 14px;
+  }
+  @include breakpoint('large') {
+    font-size: 20px;
+  }
+}
+.alp-sidenav__back {
+  right: auto;
+  left: 1em;
+}

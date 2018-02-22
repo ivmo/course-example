@@ -1,0 +1,21 @@
+@function rem($value, $max: $default-width) {
+  @return $max / 100 + 'rem';
+};
+
+@function get-color($alias) {
+  @return map-get($colors, $alias);
+}
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin orientation($orientation) {
+  @media (orientation: $orientation) {
+    @content;
+  }
+}

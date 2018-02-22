@@ -1,0 +1,81 @@
+.example {
+  background: get-color('dark-white');
+  @extend .layout__container;
+  font-size: 10px;
+  font-weight: 300;
+
+  @include breakpoint('small') {
+    font-size: 16px;
+  }
+  @include breakpoint('large') {
+    font-size: 20px;
+  }
+}
+
+.example__container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  >* {
+    box-sizing: border-box;
+    min-width: 100%; 
+  }
+
+  @include breakpoint('medium') {
+    height: 100%;
+    overflow: hidden;
+    >* {
+      min-width: 50%;
+      max-width: 50%;
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.criteria__sidebar {
+  display: inline-block;
+  max-height: 394px;
+  overflow: hidden;
+  @include breakpoint('small') {
+    max-height: 600px;
+  }
+  @include breakpoint('medium') {
+    display: flex;
+    max-height: initial;
+    overflow: visible;
+  }
+}
+
+.example__image {
+  max-width: 100%;
+  @include breakpoint('medium') {
+    max-width: none;
+    height: 100%;
+    min-height: 740px;
+    align-items: center;
+  }
+  @include breakpoint('large') {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
+
+.example__content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  padding: 16px 16px 7em;
+
+  @include breakpoint('small') { 
+    padding: 24px 24px 7em;
+  }
+  @include breakpoint('large') {
+    padding: 52px 52px 10em;
+  }
+}
