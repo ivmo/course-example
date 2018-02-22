@@ -1,45 +1,63 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-    <title>Example</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  <title>Example</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-  </head>
-  <body>    
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <div class="layout__container menu-mockup">
+    <!-- пример слайда -->
     <div class="component example">
       <div class="example__container">
-        <div class="example__content">
+        <div class="standart-padding example__content">
           <h1 class="alp-header example__header">&nbsp;</h1>
+          <p class="example__text">
+            По сути своей <b>заинтересованные стороны проекта</b>&nbsp;—&nbsp;это люди или группы людей (например, профсоюз), которые обладают двумя 
+            свойствами&nbsp;—&nbsp;<b>имеют некоторый интерес к проекту и могут повлиять на проект</b>. Интерес может быть как настоящий, так и потенциально
+            возникающий в будущем; может быть как положительным, так и отрицательным
+          </p>
+          <div class="example__badge">
+            <span>
+              <b>Команда&nbsp;проекта</b>&nbsp;также является&nbsp;стейкхолдерами&nbsp;проекта, поскольку все участники команды и влияют на проект и обладают
+              интересом к нему. Но <b>модель коммуникаций строится в&nbsp;первую очередь с&nbsp;внешними</b>, по&nbsp;отношению к&nbsp;проекту заинтересованными
+              сторонами.
+            </span>
+          </div>
         </div>
         <div class="example__sidebar">
-          <img class="example__image" src="">
+          <img class="example__image" alt="счастливые люди работают" src="./images/stackholders.jpg">
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>

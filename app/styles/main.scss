@@ -25,6 +25,45 @@ body {
   flex: 1 1 auto;
 }
 
+.menu-mockup {
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background: get-color('purple');
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 16px 0 rgba(get-color('black'), 0.5);
+  }
+  padding: 116px 0 58px 0;
+  font-size: 10px;
+
+  &::before {
+    top: 0;
+    height: 116px;
+  }
+
+  &::after {
+    bottom: 0;
+    height: 58px;
+  }
+
+  @include breakpoint('xsmall') {
+    &::before {
+      height: 58px;
+    }
+  }
+
+  @include breakpoint('large') {
+    &::after,
+    &::before {
+      height: 102px;
+    }
+  }
+}
+
 @import 'reset';
 @import 'components/header';
 @import 'components/sidenav';

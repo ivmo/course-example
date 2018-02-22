@@ -8,6 +8,7 @@ $colors: (
   'gray': #9b9b9b,
   'light-gray': #e0e0e0,
   'violet': #6066b6,
+  'violet-dark': #3f51b5,
   'purple': #673995,
   'yellow-dark': #c5a600,
   'yellow': #fcd734,
@@ -17,7 +18,7 @@ $colors: (
 $breakpoints: (
   'min': 375px, 
   'xsmall': 420px,
-  'small':  767px,
+  'small':  768px,
   'medium': 992px,
   'large':  1200px,
   'xlarge':  1460px
