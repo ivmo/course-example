@@ -1,0 +1,34 @@
+.slide-grafics {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+  z-index: 3;
+}
+
+.slide-grafics__quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.3em;
+  height: 19.3em;
+  margin-right: 115px;
+  border-radius: 50%;
+  background-color: #6722ec;
+  background-image: linear-gradient(to bottom, #4250ff 0%, #9801d9 100%);
+
+  span {
+    font-size: 60px;
+    color: #fff;
+  }
+}
+
+.slide-grafics__pic {
+  width: 29em;
+
+  img {
+    width: 100%;
+  }
+}
