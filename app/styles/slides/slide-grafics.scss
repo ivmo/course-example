@@ -4,29 +4,38 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: -20px;
+  margin: auto;
+  margin-bottom: -1em;
   z-index: 3;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .slide-grafics__quote {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19.3em;
-  height: 19.3em;
-  margin-right: 115px;
+  flex-shrink: 0;
+  width: 10.8em;
+  height: 10.8em;
+  margin-right: 4em;
   border-radius: 50%;
   background-color: #6722ec;
   background-image: linear-gradient(to bottom, #4250ff 0%, #9801d9 100%);
 
   span {
-    font-size: 60px;
+    font-size: 2em;
     color: #fff;
   }
 }
 
 .slide-grafics__pic {
-  width: 29em;
+  width: 17em;
 
   img {
     width: 100%;
