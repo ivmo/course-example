@@ -1,0 +1,120 @@
+.slide {
+
+
+  @include breakpoint('small') {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+
+.slide__inner {
+  padding: 0 52px;
+  padding-right: 6em;
+  padding-bottom: 3em;
+
+  @include breakpoint('small') {
+    padding-left: 6em;
+  }
+}
+
+.slide__inner--quote {
+  position: relative;
+
+  &::before {
+    content: '‹';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -0.1em;
+    font-size: 13.5em;
+    line-height: 0.3em;
+    color: #3d3efc;
+  }
+  &::after {
+    content: '›';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -0.1em;
+    font-size: 34.2em;
+    line-height: 0.55em;
+    color: #3d3efc;
+  }
+
+  @include breakpoint('small') {
+    &::before {
+      content: '«';
+      left: -0.02em;
+    }
+    &::after {
+      content: '»';
+      bottom: initial;
+      top: 0;
+      font-size: 13.5em;
+      line-height: 0.3em;
+    }
+  }
+}
+
+.slide__info--pt {
+  padding-top: 2.6em;
+}
+
+.slide__info--bg-yellow {
+  background-color: get-color('yellow');
+  background-image: linear-gradient(to bottom, get-color('yellow') 0%, lighten(desaturate(get-color('yellow'), 11), 21) 100%);
+
+  @include breakpoint('small') {
+    background: none;
+  }
+}
+
+.slide__left {
+  margin-bottom: 2.1em;
+  // padding: 0 47px;
+  padding-top: 2.6em;
+
+  @include breakpoint('small') {
+    width: 40%;
+    margin-bottom: 0;
+  }
+}
+
+.slide__right {
+
+  @include breakpoint('small') {
+    width: 60%;
+    padding-top: 2.3em;
+    background-color: get-color('yellow');
+    background-image: linear-gradient(to top, get-color('yellow') 20%, get-color('white') 95%);
+  }
+}
+
+.slide__info {
+  margin: auto;
+  font-size: 1.5em;
+
+  @include breakpoint('small') {
+    font-size: 1em;
+  }
+
+  span {
+    color: get-color('violet');
+  }
+}
+
+
+.slide__text {
+  // padding-top: 2.6em;
+  // font-size: 1.5em;
+
+  span {
+    color: get-color('violet');
+  }
+}
+
+.slide__cite-source {
+  margin-top: 2em;
+  color: get-color('violet');
+}
