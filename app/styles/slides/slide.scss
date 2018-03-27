@@ -86,6 +86,12 @@
   @include breakpoint('small') {
     width: 60%;
     padding-top: 2.3em;
+  }
+}
+
+.slide__right--bg-yellow {
+
+  @include breakpoint('small') {
     background-color: get-color('yellow');
     background-image: linear-gradient(to top, get-color('yellow') 20%, get-color('white') 95%);
   }
