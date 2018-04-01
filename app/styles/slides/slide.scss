@@ -389,3 +389,13 @@
   display: block;
   color: get-color('violet-dark');
 }
+
+.slide--theory {
+
+  .slide__info {
+
+    @include breakpoint('small') {
+      font-size: 1.2em;
+    }
+  }
+}
