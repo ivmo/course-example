@@ -1,0 +1,26 @@
+.sidebar {
+  display: none;
+  padding-top: 2em;
+  font-size: 0.55em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 5px 0px get-color('gray-dark');
+  height: 100%;
+  width: 90%;
+  background: get-color('white');
+  z-index: 3;
+
+  @include breakpoint('small') {
+    font-size: 0.8em;
+  }
+  @include breakpoint('medium') {
+    font-size: 1em;
+    max-width: 600px;
+  }
+
+}
+
+.sidebar--show {
+  display: block;
+}

@@ -1,21 +1,21 @@
 .slide-header {
-  font-size: 1.042em;
-  display: block;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 2em;
-  margin: 0;
-  font-weight: 500;
+  margin-bottom: 2.4em;
+  padding-top: 2.4em;
+}
 
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    transform: translate(-50%, 50%);
-    background: get-color('violet');
-    width: 3.2em;
-    height: 0.4em;
+.layout__content {
+  padding-top: 0;
+}
+
+.layout__content--pb0 {
+  padding-bottom: 0;
+}
+
+.slide-header__info {
+
+  p {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
   }
 }
