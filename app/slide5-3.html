@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  <title>Example</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <div class="layout__container menu-mockup">
+    <!-- пример слайда -->
+    <div class="slide-header">
+      <div class="layout__content">
+        <div class="slide__info  slide__info--mb">
+          <div class="slide__info-item">После того, как команде становится понятно, <span>какие ресурсы будут задействованы</span> на том или ином участке, <span>можно определить длительность операций и построить расписание</span>.</div>
+        </div>
+        <h2 class="slide-title  slide-title--no-border  slide-title--pb0">Для оценки длительностей используют один или несколько методов</h2>
+      </div>
+    </div>
+    <div class="slide  slide--content">
+      <div class="slide__inner  slide__inner--pb0">
+        <div class="slide__arrow  slide__arrow--left"><img src="images/arrow-left.png" alt=""></div>
+        <div class="slide__arrow  slide__arrow--right"><img src="images/arrow-right.png" alt=""></div>
+        <div class="slide__description">
+          <div class="slide__about">Чаще других в настоящее время используется <span>метод оценки по трем точкам</span>, также известный как <span>метод PERT</span>. Для использования этого метода необходимо проанализировать три сценария по каждой операции: <span>писсимистический, наиболее вероятный и оптимистический</span>. Посчитать длительность каждой операции по методу PERT можно следующим образом:</div>
+        </div>
+      </div>
+        <div class="slide-image  slide-image--padding">
+          <!-- <div class="slide-image__item  slide-image__item--half"><img src="images/5-3.png" alt=""></div> -->
+          <div class="slide-image__item  slide-image__item--half">
+            <div class="slide-image__formula">
+              <div class="slide-image__formula-item">pert =</div>
+              <div class="slide-image__formula-item">
+                <div class="slide-image__formula-top">(<span>p</span> + 4<span>m</span> + <span>o</span>)</div>
+                <div class="slide-image__formula-bottom">6</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-image__description">
+            <div class="slide-image__description-item">Где <span>P</span> – пессимстическая оценка,</div>
+            <div class="slide-image__description-item"><span>M</span> – наиболее вероятная,</div>
+            <div class="slide-image__description-item">а <span>О</span> – оптимистическая.</div>
+          </div>
+        </div>
+        <div class="slide__description">
+          <div class="layout__content">
+            <div class="slide__about"><span>После построения сетевой диаграммы</span>, оценки ресурсов и определения длительностей у команды проекта появляется расписание проекта и общая длительность проекта.</div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="sidebar  sidebar--show">
+    <div class="layout__content">
+      <div class="slide__info">
+        <div class="slide__info-item">Для того, чтобы определить реальную длительность проекта <span>используется инструмент критического пути</span>. Это <span>самая длинная цепочка</span> операций в проекте, которая позволяет оценить длительность проекта. Все операции, лежащие на критическом пути не имеют временного резерва и если «сдвинется» любая из таких операций будет сдвинут и срок всего проекта.</div>
+        <div class="slide__info-item">Для примера из первоначального вопроса критическим путем является последовательность: 1-2-5-4-7-9-10</div>
+      </div>
+      <div class="slide-image__item  slide-image__item--sidebar"><img src="images/5-4.png" alt=""></div>
+      <div class="slide__info">
+        <div class="slide__info-item">У всех прочих операций, <span>вне критического пути есть свободный временной резерв</span>. Например, для операции 1 на диаграмме ниже свободный временной резерв – 1 день. Она может свободно задержаться на этот день, не вызывая срыва сроков всего проекта.</div>
+        <div class="slide__info-item"><span>При оптимизации расписания в первую очередь работают с операциями критического пути.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

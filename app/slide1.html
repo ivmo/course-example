@@ -26,17 +26,17 @@
 <body>
   <div class="layout__container menu-mockup">
     <!-- пример слайда -->
-    <div class="slide">
+    <div class="slide  slide--theory">
         <div class="slide__left">
           <div class="layout__content">
             <div class="diagramma"><img src="images/diagramma.png" alt=""></div>
             <div class="slide__info"><span>Следующей задачей</span>  после работы с содержанием продукта и проекта будет задача <span>планирования расписания</span>. Необходимо разработать расписание с учетом ограничений и исключений проекта и это расписание должно базироваться на созданной ИСР.</div>
           </div>
         </div>
-        <div class="slide__right">
+        <div class="slide__right  slide__right--bg-yellow">
           <div class="slide-grafics layout__content">
             <div class="slide-grafics__quote"><span>Цитата</span></div>
-            <div class="slide-grafics__pic"><img src="images/book.svg" alt=""></div>
+            <div class="slide-grafics__pic"><img src="images/book.png" alt=""></div>
           </div>
           <div class="slide__info  slide__info--pt  slide__info--bg-yellow">
             <div class="layout__content  slide__inner  slide__inner--quote">
@@ -47,6 +47,23 @@
         </div>
     </div>
 
+  </div>
+
+  <div class="sidebar  "> <!-- Довавить класс sidebar--show для отображения этого блока  -->
+    <div class="layout__content">
+      <div class="slide__info">
+        <div class="slide__info-item"><span>Существует два способа планировать сроки проекта:</span> от даты начала проекта и от даты окончания проекта. </div>
+        <div class="slide__info-item">Планирование от даты начала предусматривает, что есть точка старта и нужно посчитать точку финиша, когда мы по плану должны передать продукт проекта Заказчику.</div>
+        <div class="slide__info-item">Планирование от даты окончания подразумевает, что точно известна дата завершения проекта (привязана к какому-либо событию) и задача увидеть расписание, с точки зрения самого раннего момент старта, чтобы успеть вовремя.</div>
+      </div>
+      <div class="slide__info">
+        <div class="slide__info-item"><span>«Открытие дополнительного офиса»</span> скорее всего будет планированием от даты начала. То есть задачей построения расписания будет определить, когда мы сможем начать работу нашего офиса.</div>
+        <div class="slide__btn-inner  slide__btn-inner--mt  slide__btn-inner--center">
+          <button class="slide-btn  slide-btn--half  slide-btn--sidebar">Празднование юбилея</button>
+          <button class="slide-btn  slide-btn--half  slide-btn--sidebar">Открытие дополнительного офиса</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- build:js scripts/vendor.js -->
