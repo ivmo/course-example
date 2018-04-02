@@ -1,5 +1,5 @@
 .slide {
-
+  font-weight: 300;
 
   @include breakpoint('small') {
     display: -webkit-flex;
@@ -121,8 +121,6 @@
 .slide__description {
   display: flex;
   align-items: flex-start;
-  font-size: 1.5em;
-  margin-bottom: 2em;
 }
 
 .slide__number {
@@ -211,7 +209,7 @@
 
 .slide__info {
   margin: auto;
-  font-size: 1.5em;
+  // font-size: 1.5em;
 
   @include breakpoint('small') {
     font-size: 1em;
@@ -256,13 +254,11 @@
   margin-top: 2em;
 
   @include breakpoint('small') {
-    font-size: 1.5em;
     width: 17em;
     height: 17em;
     margin-bottom: 0;
   }
   @include breakpoint('medium') {
-    font-size: 1.2em;
   }
 }
 
@@ -301,7 +297,7 @@
   margin-bottom: 0.7em;
 
   @include breakpoint('small') {
-    font-size: 1.5em;
+
   }
 
   &:last-child {
@@ -321,6 +317,7 @@
 
 .slide__cite-source {
   margin-top: 2em;
+  font-weight: 500;
   color: get-color('violet');
 }
 
