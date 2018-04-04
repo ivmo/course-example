@@ -64,6 +64,10 @@ body {
   }
 }
 
+body .inner-scroll {
+  overflow: auto;
+}
+
 @import 'reset';
 @import 'components/header';
 @import 'components/sidenav';
@@ -76,12 +80,13 @@ body {
 
 //  Пример слайда
 @import 'slides/example';
+@import 'slides/slide-header';
 @import 'slides/slide';
 @import 'slides/content-inner';
-@import 'slides/diagramma.scss';
-@import 'slides/slide-grafics.scss';
-@import 'slides/slide-header.scss';
-@import 'slides/slide-title.scss';
-@import 'slides/slide-image.scss';
-@import 'slides/slide-btn.scss';
-@import 'slides/sidebar.scss';
+@import 'slides/diagramma';
+@import 'slides/slide-grafics';
+@import 'slides/slide-title';
+@import 'slides/slide-image';
+@import 'slides/slide-btn';
+@import 'slides/sidebar';
+@import 'slides/mods';

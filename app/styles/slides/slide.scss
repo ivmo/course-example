@@ -1,5 +1,6 @@
 .slide {
   font-weight: 300;
+  overflow: hidden;
 
   @include breakpoint('small') {
     display: -webkit-flex;
@@ -60,6 +61,7 @@
 
 .slide__inner--quote {
   position: relative;
+  padding-bottom: 2.7em;
 
   &::before {
     content: '‹';
@@ -70,6 +72,7 @@
     font-size: 13.5em;
     line-height: 0.3em;
     color: #3d3efc;
+    font-weight: 400;
   }
   &::after {
     content: '›';
@@ -80,6 +83,7 @@
     font-size: 34.2em;
     line-height: 0.55em;
     color: #3d3efc;
+    font-weight: 400;
   }
 
   @include breakpoint('small') {
@@ -147,8 +151,7 @@
 
 
 .slide__left {
-  margin-bottom: 2.1em;
-  // padding: 0 47px;
+  margin-bottom: 2em;
   padding-top: 2.6em;
 
   @include breakpoint('small') {
@@ -222,7 +225,7 @@
 }
 
 .slide__info--mb {
-  margin-bottom: 2.3em;
+  margin-bottom: 2em;
 }
 
 .slide__info--pt {
@@ -385,14 +388,4 @@
 .slide__about-link {
   display: block;
   color: get-color('violet-dark');
-}
-
-.slide--theory {
-
-  .slide__info {
-
-    @include breakpoint('small') {
-      font-size: 1.2em;
-    }
-  }
 }
