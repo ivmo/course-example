@@ -63,16 +63,28 @@
   position: relative;
   padding-bottom: 2.7em;
 
+  @include breakpoint('small') {
+    padding-left: 9.3em;
+    padding-right: 6.2em;
+  }
+
   &::before {
     content: '‹';
     display: block;
     position: absolute;
     top: 0;
     left: -0.1em;
-    font-size: 13.5em;
+    font-size: 16.4em;
     line-height: 0.3em;
     color: #3d3efc;
     font-weight: 400;
+
+    @include breakpoint('small') {
+      content: '«';
+      left: 0.1em;
+      font-size: 16.4em;
+      line-height: 0.3em;
+    }
   }
   &::after {
     content: '›';
@@ -80,25 +92,20 @@
     position: absolute;
     bottom: 0;
     right: -0.1em;
-    font-size: 34.2em;
+    font-size: 41em;
     line-height: 0.55em;
     color: #3d3efc;
     font-weight: 400;
-  }
 
-  @include breakpoint('small') {
-    &::before {
-      content: '«';
-      left: -0.02em;
-    }
-    &::after {
+    @include breakpoint('small') {
       content: '»';
       bottom: initial;
       top: 0;
-      font-size: 13.5em;
+      font-size: 16.4em;
       line-height: 0.3em;
     }
   }
+
 }
 
 
@@ -182,6 +189,7 @@
   }
 
   .slide__inner--quote {
+
 
     &:before {
 

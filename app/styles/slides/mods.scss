@@ -25,6 +25,7 @@
 }
 
 .slide-image__item--2-3 {
+  width: 30.9em;
   padding: 0 3em;
 
   @include breakpoint('small') {
@@ -51,7 +52,7 @@
 }
 
 .slide-image__item--2-4 {
-  max-width: 22em;
+  width: 16.3em;
   margin-left: auto;
   margin-right: auto;
 
@@ -68,6 +69,14 @@
 
 .slide-image--2-5 {
   padding-top: 1em;
+}
+
+.slide-image__item--2-5 {
+  width: 34.3em;
+
+  @include breakpoint('small') {
+    margin-left: 1em;
+  }
 }
 
 .slide__pic--4-mb {
@@ -106,4 +115,88 @@
 
 .slide__description--6 {
   margin-bottom: 1.5em;
+}
+
+.slide-grafics__pic--book {
+  width: 17em;
+  flex-shrink: 0;
+}
+
+.slide-image__item-2-1 {
+  width: 10.8em;
+}
+
+.slide-image__item-2-2 {
+  width: 34.3em;
+}
+
+.slide__pic--3-1 {
+  width: 32.5em;
+}
+
+.slide-grafics__quote--3-1 {
+
+  @include breakpoint('small') {
+    margin-right: 2em;
+  }
+}
+
+.slide__inner--quote-3-1 {
+  padding-left: 4.7em;
+  padding-right: 6.5em;
+
+  &:after {
+    top: 0;
+    bottom: initial;
+    line-height: 0.2em;
+
+    @include breakpoint('small') {
+      line-height: 0.3em;
+    }
+  }
+}
+
+.slide__info--round-4 {
+
+  @include breakpoint('small') {
+    margin-left: 0;
+  }
+}
+
+.slide__description--5-pt {
+
+  @include breakpoint('small') {
+    padding-top: 0.5em;
+  }
+}
+
+.slide-image__item--5-1 {
+  padding: 0 16px;
+
+  @include breakpoint('small') {
+    width: 34.1em;
+  }
+
+}
+
+.slide-image__item--5-2 {
+  padding: 0 16px;
+
+  @include breakpoint('small') {
+    width: 30.7em;
+  }
+}
+
+.slide-image-6-2 {
+
+  @include breakpoint('small') {
+    padding-left: 0;
+  }
+}
+
+.slide-image-6-3 {
+
+  @include breakpoint('small') {
+    padding-left: 0;
+  }
 }
